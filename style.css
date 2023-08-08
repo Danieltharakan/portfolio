@@ -1,0 +1,295 @@
+img{
+    margin-left: 100px;
+}
+.container{
+    width:100%;  
+    height: 100vh;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+*{
+    margin: opx;
+    padding: 0px;
+  
+    font-family: 'Oxanium', cursive;
+    
+    /* overflow-x: hidden; */
+}
+.navbar{
+    display: flex;/* side by side */
+    justify-content: space-between;/* to get space btw conntents */
+    width: 85%;
+    align-items:center;/* get distace from top */
+    
+}
+.logo{
+    width: 130px;
+}
+.listitems{
+    
+   display: inline-block;
+   margin: 10px 20px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+/* selectors:pseudo_class(property:value;) */
+.links:hover{
+    color: red;
+    font-size: larger;
+  
+}
+.title{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+.title_h1{
+    font-size:30px;
+    margin-bottom: 20px;
+
+}
+#LASTNAME{
+    color: cadetblue;
+}
+.download{
+   
+    background-color: rgb(0, 0, 0);
+    width: 0px;
+    height: 150px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 9px;
+    box-shadow: 0px 1px 2px 2px grey;
+    border-style: inset;
+    text-decoration: solid;
+    
+}
+.images
+{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.images img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);/* by using this method to remove the scroll */
+   
+    transition: bottom 1s, left 1s;
+    bottom: 0px;
+
+}
+
+
+.images:hover #shape{
+    bottom: 70px;
+}
+
+    .images:hover #girl{
+        left: 40%;
+
+    }
+    #about{
+        margin: 23% 8% 0% 8%;
+       
+    }
+    .heading{
+        text-align: center;
+    }
+.heading h2{
+    font-size: 40px;
+    
+}
+.heading span{
+    font-size: 25px;
+    color: green;
+   
+}
+/* dispaly grid is also used as a flex */
+
+
+.about_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);/* 1fr=255px */
+    margin-top: 30px;
+    gap: 2rem;/* 1rem=16px */
+  
+
+}
+.information{
+    margin-top: 2rem;
+} 
+.infobox{
+    margin-bottom: 1rem;
+
+}
+.about_details{
+    font-size: 18px;
+    text-align: justify;
+}
+.about_image img{
+    width: 80%;
+    border-radius: 1rem;
+   margin-left: 20px;
+}
+.infobox span{
+    margin-left: 1rem;
+}
+#skills{
+    margin: 8% 8% 0% 8%;
+
+}
+.skill_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);/* 1fr=255px */
+    margin-top:2rem;
+    gap: 2rem;/* 1rem=16px */
+    }
+.skill_image img{
+    width: 90%;
+    height: 100%;
+    padding-left: 4rem;
+}
+.bar_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(255, 5, 5);
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+}
+.css-bar{
+    background-color: rgb(0, 0, 0);
+    width: 95%;
+}
+.js-bar{
+    background-color: rgb(0, 0, 0);
+    width: 85%;
+}
+.html-bar{
+    background-color: rgb(3, 0, 6);
+    width: 100%;
+}
+.react-bar{
+    background-color: rgb(0, 0, 0);
+    width: 90%;
+}
+.icons{
+    
+    display: flex;
+    justify-content:center;
+   /*  margin: 1% 40% 0% 40%; */
+    align-items: center;
+    
+
+}
+.contact_icons,.up{
+    
+    text-decoration: none;
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 50px 10px ;
+    
+
+}
+.lk:hover{
+    color: rgb(0, 120, 224);
+    animation: forwards;
+
+}
+.gh:hover{
+    color: grey;
+}
+.twt:hover{
+    color: rgb(0, 136, 255);
+}
+.wp:hover{
+    color: rgb(105, 210, 0);
+}
+.fb:hover{
+    color: blue;
+}
+.is:hover{
+    color: rgb(204, 0, 99);
+}
+.copyrights{
+    margin: 20px;
+}
+.copytext{
+    text-align: center;
+}
+    
+.up{
+float:right;
+color: rgb(0, 0, 0);
+
+}
+.lk{
+    color: rgb(0, 0, 0);
+}
+.gh{
+    color: black;
+}
+.twt{
+    color: black;
+}
+.wp{
+    color: black;
+}
+.fb{
+    color: black;
+}
+.is{
+    color: black;
+}
+.contact_icons:hover,.up{
+    
+    background-image: linear-gradient(to bottom right, rgb(77, 64, 64), rgb(146, 136, 136));
+}
+.contact_icons:hover i{
+    /* color: rgb(255, 255, 255); */
+    animation: shake 2s infinite;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+      color: rgb(255, 255, 255);
+    }
+    20%{
+        transform: rotate(-15deg);
+    } 
+    80%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+    }
+}
+.up:hover i{
+color: aliceblue;
+}
+html{
+    scroll-behavior: smooth;
+}
